@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>send an mail from contact form</title>
+  </head>
+  <body>
+    <!-- 
+          bunun için formsubmit.co kullanacağız
+          
+    
+    -->
+    <form action="https://formsubmit.co/kbeler@outlook.com" method="POST">
+      <input type="hidden" name="_subject" value="New email" />
+      <input type="email" name="email" placeholder="Email Address" />
+      <input type="hidden" name="_next" value="https://thanks.html" />
+      <input
+        type="text"
+        name="message"
+        required
+        placeholder="write your message here"
+      />
+      <!-- <input type="email" name="email" required /> -->
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
